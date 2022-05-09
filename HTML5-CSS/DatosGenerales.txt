@@ -1,0 +1,14 @@
+Equipo Front End
+    Programador Front End
+        Dominar lenguajes HTML, CSS y JS.
+        Lógica de programación.
+    Responsable por UX
+    Responsable por UI
+        Contacto con cliente.
+        Pasar especificaciones al programador.
+    Copywriter (Generador de contenido)
+    SEO (Search Engine Optimization)
+        Usar palabras claves que aumenten la mercadotecnia.
+
+    
+

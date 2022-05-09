@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+<h1>PROGRAMA</h1>
+
+<script>
+
+    var anho = 2025
+    var saltolinea = "<br><br><br><hr><br><br>"
+
+    function saltarLinea() {
+        document.write(saltolinea);
+        
+    }
+
+    function imprimir(frase) {
+        document.write();
+        document.write('<big>'+ frase +'</big>');
+        saltarLinea();
+        
+    }
+
+
+    imprimir("Hola amigos");
+    saltarLinea();
+    imprimir('Juan tiene: ' + (anho -2000) + " años");
+
+    imprimir('Pedro tiene: ' + (anho -1995) + " años")
+    
+    anho = 20300
+
+    imprimir('Carlos tiene: ' + (anho -2005) + " años")
+
+    saltarLinea();
+    saltarLinea();
+
+    function difEdades(edad1, edad2) {
+        var diferencia = edad1 - edad2;
+        imprimir('Nuestra diferencia de edad es: ' + diferencia +  ' años')
+        
+    }
+
+    difEdades((2021-1987),27)
+
+
+
+imprimir("<hr>")
+    
+</script>

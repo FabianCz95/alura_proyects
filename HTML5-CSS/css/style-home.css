@@ -1,0 +1,189 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ---- Header */
+header { 
+    background-color: #BBBBBB;
+    padding: 20px;
+}
+
+.caja {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a { 
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+/* -------- Main --------------*/
+.banner {
+    width: 100%
+}
+
+.principal {
+    background: #FEFEFE;
+    width: 940px;
+    margin: 10px auto;
+    height: 400px;
+}
+
+.parrafo-mision {
+    float: left;
+    margin-top: 1em;
+    font-size: 19px;
+    text-align: justify;
+    width: 60%;
+}
+
+em strong {
+    color: red;
+}
+
+#mision {
+    font-size: 23px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    margin: 30px 0 30px 0;
+}
+
+.mision-img {
+    width: 35%;
+    float: right;
+}
+
+.mision-img img {
+    width: 100%;
+}
+
+/* ----- Nuestra ubicación ------- */
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapaContenido {
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+/* ------ Diferenciales -------- */
+.diferencial {
+    background-color: #888888;
+    margin: 0 auto;
+}
+
+.diferenciales {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.imgDiferenciales {
+    width: 40%;
+    border-radius: 50%;
+    margin: 10px auto;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px #000000;
+}
+
+.imgDiferenciales:hover {
+    opacity: 0.5;
+}
+
+.diferenciales-ul {
+    width: 50%;
+    font-size: 20px;
+    font-style: italic;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 2em;
+}
+
+.items {
+    line-height: 1.5;
+}
+
+.items::before {
+    content: "★  ";
+}
+
+.items:first-child {
+    font-weight: bold;
+}
+
+.titulo {
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* ---------- Video------------ */
+
+.video {
+    width: 560px;
+    height: 315px;
+    margin: 1em auto;
+}
+
+/* --- Footer --- */
+
+footer {
+    text-align: center;
+    background: url(../assets/bg.jpg);
+    padding: 40px;
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
+
+/* -------- Medias Query -------- */
+@media screen and (max-width:480px) {
+
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
+    .caja, .principal, .mapaContenido, .diferenciales, .video {
+        width: auto;
+    }
+    .imgDiferenciales, .diferenciales-ul {
+        width: 100%;
+    }
+}
