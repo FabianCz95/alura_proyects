@@ -42,18 +42,77 @@
         </li>
         <li>mkdir "Nombre de carpeta": crear carpeta.</li>
         <li>git init --bare : Inicializa repositorio vacío</li>
+        <li>git remote add "NombreDelServidor" "Url del sevidor"</li>
+        <li>git push "NombreDelServidor" "NombreRama"</li>
+        <li>git remote rename "NombreAnterior" "NombreNuevo": renombrar servidor</li>
+        <li>git clone "url de servidor": clonar repositorio.</li>
+        <li>git pull "nombreServidor" "nombreRama"</li>
+        <li>git branch: Muestra las ramas existentes
+            <ul>
+                <li><a href="https://git-school.github.io/visualizing-git/">Practicar con ramas</a></li>
+                <li>git branch "nombre de rama": crea una nueva rama</li>
+                <li>git checkout "nombre de rama": Cambiar de rama</li>
+                <li>git checkout -b "nombre de rama": Crear y cambiar a nueva rama.</li>
+                <li>git marge "nombreRama": Merge entre rama actual y "nombreRama" ((:X) Sirve para salir del editor del
+                    mensaje)</li>
+                <li>git rebase "nombreRama": Se crean commit de "nombreRama" en "ramaHEAD"
+                    <ul>
+                        <li>marge: Junta los trabajos y genera un merge commit.</li>
+                        <li>rebase: Aplica los commits de otra branch en la branch actual</li>
+                        <p>Cuando hay conflico entre 2 ramas que han sido modificadas hay que corregir en visualcode que
+                            opcion se quedara y posteriormente hacer un commit para guardar los cambios.</p>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            Ctrl-Z entre versiones de git
+            <ul>
+                <li>git restore "nombreArchivo": restaurar version de git. (antes de agregarlas)</li>
+                <li>git restore --staged: desahace modificaciones despues de agregarlas pero antes de commit</li>
+                <li>git revert "HASH commit": crea un nuevo commit deshaciendo HASH (despues de commitearlas)</li>
+            </ul>
+        </li>
+        <li>
+            Guardados temporales
+            <ul>
+                <li>git stash: guarda temporalmente modificaciones.</li>
+                <li>git stash list: listado de guardados temporales.</li>
+                <li>gti stash apply "numeroStash": aplica los cambios</li>
+                <li>git stash pop: toma la ultima modificacion del listado stash, aplica los cambios y elimina del
+                    stash.</li>
+            </ul>
+        </li>
+        <li>
+            Revisar commits anteriores:
+            <ul>
+                <li>git checkout "hashCommit": podemos ver y manipular estados anteriores de nuestro codigo, pero para
+                    guardar los cambios primero deberemos crear una rama seguido del commit que nos guarde estos cambios
+                </li>
+            </ul>
+        </li>
+        <li>
+            git diff "hash1" .. "hashActual": volver atras y eliminar commits.
+        </li>
+        <li>
+            TAG: Versiones que 1.0/2.0:
+            <li>git tag -a "nombreDTag" -m "Descripcion de tag"</li>
+            <li>git push "servidor" "nombreTag"</li>
+        </li>
     </ol>
     <h4>Git status</h4>
     <ul>
         <li>Head: Estado actual de nuestro código, es decir, donde nos colocó GIT.</li>
         <li>Working tree: Lugar donde los archivos realmente están siendo almacenados</li>
-        <li>index: Lugar donde Git almacena lo que será commiteado, es decir, la ubicación entre el working tree y el
+        <li>index: Lugar donde Git almacena lo que será commiteado, es decir, la ubicación entre el working tree
+            y el
             repositorio de Git en sí.</li>
         <li><a href="https://git-scm.com/book/es/v2/Fundamentos-de-Git-Guardando-cambios-en-el-Repositorio.">Explicación
                 de estados</a></li>
     </ul>
     <h4>Git Ignore</h4>
-    <p>Hay que crear un archivo llamado "".gitignore" al mismo nivel de los archivos que queramos que git ignore</p>
+    <p>Hay que crear un archivo llamado "".gitignore" al mismo nivel de los archivos que queramos que git ignore
+    </p>
 </body>
 
 </html>
