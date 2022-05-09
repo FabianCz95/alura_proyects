@@ -1,20 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Github</title>
 </head>
+
 <body>
     <h1>Curso de github impartido por AluraLatam + Oracle</h1>
-    <h4>Pasos para actualizar nuestros cambios en github:</h4>
+    <h4>Comandos de git:</h4>
     <ol>
         <li>git init: Se utiliza al iniciar un proyecto.</li>
         <li>git status: Sirve para ver el estado de las modificaciones realizados.</li>
         <li>git add . : Sirve para añadir los cambios efectuados al commit.</li>
         <li>git commit -m "Descripcion de commit" : sirve para salvar los cambios en un commit.</li>
-        <li></li>
+        <li>git log:
+            <ul>
+                <li>git log: Permite ver el historico de modificaciones.
+                    <ul>
+                        <li>Hash: ID para ese commit</li>
+                        <li>Branch: Permite ver el Head y la rama</li>
+                        <li>Author</li>
+                        <li>Fecha</li>
+                        <li>Nombre del commit</li>
+                    </ul>
+                </li>
+                <li>git log --oneline: Permite ver el historico de modificaciones en una sola linea por commit</li>
+                <li>git log -p: Permite ver el historico de modificaciones de forma detallada (para salir de este modo
+                    hay que teclear ":q"</li>
+                <li>git log --pretty="format:%H": Ver solo los HASH de cada commit</li>
+                <li><a href="https://devhints.io/git-log-format">Más formatos de git log</a></li>
+            </ul>
+        </li>
+        <li>git config
+            <ul>
+                <li>user</li>
+                <li>email</li>
+            </ul>
+        </li>
     </ol>
+    <h4>Git status</h4>
+    <ul>
+        <li>Head: Estado actual de nuestro código, es decir, donde nos colocó GIT.</li>
+        <li>Working tree: Lugar donde los archivos realmente están siendo almacenados</li>
+        <li>index: Lugar donde Git almacena lo que será commiteado, es decir, la ubicación entre el working tree y el
+            repositorio de Git en sí.</li>
+        <li><a href="https://git-scm.com/book/es/v2/Fundamentos-de-Git-Guardando-cambios-en-el-Repositorio.">Explicación
+                de estados</a></li>
+    </ul>
+    <h4>Git Ignore</h4>
+    <p>Hay que crear un archivo llamado "".gitignore" al mismo nivel de los archivos que queramos que git ignore</p>
 </body>
+
 </html>
